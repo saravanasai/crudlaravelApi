@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+
+
+
+    public function allproduct()
+    {
+
+
+        return  User::all();
+    }
+
     //
     public function addproduct(Request $request)
     {
