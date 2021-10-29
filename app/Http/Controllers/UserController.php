@@ -30,4 +30,11 @@ class UserController extends Controller
             return json_encode($response);
         }
     }
+
+    public function singleContact($id)
+    {
+
+        return  User::find($id);
+    }
+
 }

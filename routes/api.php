@@ -21,3 +21,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/allproduct',[UserController::class,'allproduct']);
 Route::post('/addcontact', [UserController::class, 'addproduct']);
+Route::get('/singleContact/{id?}', [UserController::class, 'singleContact']);
