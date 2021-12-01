@@ -18,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get("/users",[LoginController::class,'get_all_users']);
+Route::get("/users/{id}",[LoginController::class,'get_single_users']);
+
+Route::post("/login",[LoginController::class,'user_login']);
